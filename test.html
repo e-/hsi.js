@@ -33,6 +33,14 @@
 			document.write('<pre>toHSI("#3226D6")          = ' + toHSI("#3226D6") + "</pre>");
 			document.write('<pre>toRGB(toHSI(50,38,214))   = ' + toRGB(toHSI(50,38,214)) + '</pre>');
 
+			for(i=0;i<10;i++){
+				div = document.createElement('div');
+				rgb = toRGB(Math.floor(Math.random()* 360), 1, 1);
+				div.setAttribute('class', 'cell2');
+				div.style.background = "rgb("+rgb[0]+","+rgb[1]+","+rgb[2]+")";
+				body.appendChild(div);
+			}
+
 			for(i=0;i<65536*255;i+=50013){
 				r=Math.floor((i/255/255));
 				g=Math.floor((i/255)%255);
