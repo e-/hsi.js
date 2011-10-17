@@ -4,13 +4,11 @@ hsi.js is a small javascript library which converts HSI and RGB to each other.
 
 ### Conversion from RGB to HSI
 
-<pre><code>
-	hsi = toHSI(255, 0, 0); // [0, 1, 0.3333]
+<pre><code>	hsi = toHSI(255, 0, 0); // [0, 1, 0.3333]
 </code></pre>
 
 you can use various RGB formats.
-<pre><code>
-	hsi1 = toHSI(255, 0, 0);
+<pre><code>	hsi1 = toHSI(255, 0, 0);
 	
 	hsi2 = toHSI([255, 0, 0]);
 	hsi3 = toHSI('#FF0000');
@@ -22,8 +20,7 @@ you can use various RGB formats.
 
 ### Conversion from HSI to RGB
 
-<pre><code>
-	rgb1 = toRGB(0, 1, 0.3333); // [255, 0, 0]
+<pre><code>	rgb1 = toRGB(0, 1, 0.3333); // [255, 0, 0]
 	rgb2 = toRGB([0, 1, 0.3333]); // [255, 0, 0]
 
 	pink = toRGB(300, 1, 0.6666); // [255, 0, 255]
@@ -33,18 +30,18 @@ you can use various RGB formats.
 
 you can generate colors using HSI features.
 
-<pre><code>
-	//generate pastel-tone color.
+<pre><code>	//generate pastel-tone color.
 	pastel = toRGB(Math.floor(Math.random() * 360), 0.3, 1); 
 
 	//generate vivid color.
 	vivid = toRGB(Math.floor(Math.random() * 360), 1, 1);
-</pre></code>
+</code></pre>
 
 ## Tested Environments
 
 - Chrome 14
 - Internet Explorer 8
+- FireFox 6
 
 ## Licences
 ### GPL
