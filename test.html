@@ -27,6 +27,12 @@
 		<script type="text/javascript">
 			var body = document.getElementsByTagName("body")[0];
 			var i;
+			document.write("<pre>toHSI(50, 38, 214)        = " + toHSI(50,38,214) + "</pre>");
+			document.write("<pre>toHSI([50, 38, 214])      = " + toHSI([50,38,214]) + "</pre>");
+			document.write('<pre>toHSI("rgb(50, 38, 214)") = ' + toHSI("rgb(50,38,214)") + "</pre>");
+			document.write('<pre>toHSI("#3226D6")          = ' + toHSI("#3226D6") + "</pre>");
+			document.write('<pre>toRGB(toHSI(50,38,214))   = ' + toRGB(toHSI(50,38,214)) + '</pre>');
+
 			for(i=0;i<65536*255;i+=50013){
 				r=Math.floor((i/255/255));
 				g=Math.floor((i/255)%255);
@@ -37,7 +43,6 @@
 				body.appendChild(div);
 
 				t = toRGB(toHSI(r,g,b));
-				console.log(t);
 				div2 = document.createElement('div');
 				div2.setAttribute('class', 'cell2');
 				div2.style.background = "rgb("+t[0]+","+t[1]+","+t[2]+")";
