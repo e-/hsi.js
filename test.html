@@ -20,11 +20,14 @@
 		</style>
 	</head>
 	<body>
+		<header>
+			both colors must be the same.
+		</header>
 		<script type="text/javascript" src="./hsi.js"></script>
 		<script type="text/javascript">
 			var body = document.getElementsByTagName("body")[0];
-
-/*			for(var i=0;i<65536*255;i+=500013){
+			var i;
+			for(i=0;i<65536*255;i+=50013){
 				r=Math.floor((i/255/255));
 				g=Math.floor((i/255)%255);
 				b=i%255%255;
@@ -34,11 +37,12 @@
 				body.appendChild(div);
 
 				t = toRGB(toHSI(r,g,b));
+				console.log(t);
 				div2 = document.createElement('div');
 				div2.setAttribute('class', 'cell2');
 				div2.style.background = "rgb("+t[0]+","+t[1]+","+t[2]+")";
 				body.appendChild(div2);
-			}*/
+		}
 		</script>
 	</body>
 </html>
