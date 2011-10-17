@@ -43,10 +43,10 @@ you can generate colors using HSI features.
 
 ## Tested Environments
 
-- Chrome 14
-- Internet Explorer 7
-- Internet Explorer 8
-- FireFox 6
+- Safari
+- Google Chrome 
+- Internet Explorer 6+
+- FireFox
 
 ## Licences
 ### GPL
