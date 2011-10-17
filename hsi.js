@@ -104,11 +104,11 @@
 		if(r instanceof Array){		// toHSI([128, 128, 0])
 			return rgb2hsi(r[0], r[1], r[2]);
 		}
-		else if(r instanceof String && r.indexOf('rgb') === 0){		// toHSI('rgb(128,128,0)') or toHSI('rgba(128,128,0,0.5'))
+		else if(typeof r == "string" && r.indexOf('rgb') === 0){		// toHSI('rgb(128,128,0)') or toHSI('rgba(128,128,0,0.5'))
 			sp = r.replace(/rgb(a?)\(|\)|\s/gi, '').split(',');
 			return rgb2hsi(sp[0], sp[1], sp[2]);
 		}
-		else if(r instanceof String && r.indexOf('#') === 0){			// toHSI('#808000')
+		else if(typeof r == "string"  && r.indexOf('#') === 0){			// toHSI('#808000')
 
 			// Take off '#'
 			rgb = r.slice(1);
