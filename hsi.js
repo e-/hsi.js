@@ -74,7 +74,7 @@
 		else {r=g=b=0;}
 
 		/* normalize RGB */
-		return [Math.floor(i*r*765), Math.floor(i*g*765), Math.floor(i*b*765)];
+		return [Math.round(i * r * 765), Math.round(i * g * 765), Math.round(i * b * 765)];
 	}
 
 	/**
