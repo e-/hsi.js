@@ -2,7 +2,7 @@
  * hsi.js HSI <-> RGB Conversion library
  * https://github.com/e-/hsi.js
  *
- * Copyright 2011, Jaemin Jo
+ * Copyright 2011-2015, Jaemin Jo
  * under the GPL Version 3 license.
  */
 

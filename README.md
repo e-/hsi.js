@@ -51,7 +51,7 @@ you can generate colors using HSI features.
 ## Licences
 ### GPL
 hsi.js (HSI <-> RGB conversion javascript library)
-Copyright (C) 2011 Jaemin Jo
+Copyright (C) 2011-2015 Jaemin Jo
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
